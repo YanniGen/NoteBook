@@ -11,7 +11,7 @@ export class NotesService {
   changes$ = new Subject();
 
   constructor() {
-    this.localStorage = window.localStorage;
+    this.localStorage = window.sessionStorage;
   }
 
   get(key: string): any {

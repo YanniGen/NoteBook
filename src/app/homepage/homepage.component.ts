@@ -18,6 +18,9 @@ export class HomepageComponent implements OnInit {
     if (this.notesService.get('notebook')) {
       this.pages = this.notesService.get('notebook');
     }
+    if (this.pages.length == 0) {
+      this.pages.push({notes: ''});
+    }
   }
 
   addPage() {
