@@ -15,10 +15,13 @@ export class HomepageComponent implements OnInit {
   constructor(private notesService: NotesService) { }
 
   ngOnInit(): void {
-    this.pages = this.notesService.get('notebook');
+    if (this.notesService.get('notebook')) {
+      this.pages = this.notesService.get('notebook');
+    }
   }
 
   addPage() {
+    console.log(this.pages);
     this.pages.push({notes: ''});
   }
 

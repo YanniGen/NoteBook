@@ -1,19 +1,18 @@
 
 
 
-.text-box {
+.mat-card-box {
 
-    margin: 95px 0px 0px 150px;
+    margin: 95px 100px 0px 150px;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
-    height: 80%;
-    width: 80%;
+    
 }
 
 .mat-tab-container {
     flex-direction: row;
+    height: 90%;
 }
 
 .full-width {
@@ -21,13 +20,14 @@
 }
 
 .note-box {
-    height: 570px;
+    resize: vertical;
+    overflow: auto;
+    height: 500px;
 }
 
 .actions-container {
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
+    align-items: center;
     justify-content: end;
-    margin-bottom: 40px;
 }

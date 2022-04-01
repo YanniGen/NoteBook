@@ -1,7 +1,7 @@
-<mat-card class="text-box">
+<mat-card class="mat-card-box">
     <mat-card-title>Enter Notes</mat-card-title>
 
-    <div class="mat-tab-container">
+    <mat-card-content class="mat-tab-container">
         <mat-tab-group mat-align-tabs="start" (selectedTabChange)="updateCurrentPage($event)">
             <mat-tab *ngFor="let page of pages; let i = index" label="{{i+1}}">
                 <mat-card-content>
@@ -14,7 +14,7 @@
                 </mat-card-content>
             </mat-tab>
         </mat-tab-group>
-    </div>
+    </mat-card-content>
    
 
     <mat-card-actions class="actions-container">
